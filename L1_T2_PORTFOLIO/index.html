@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="/Favicon.png" type="image/png">
+
+  </head>
+
+  <body>
+    <!--------------------NAVBAR-------------------->
+
+    <header>
+      <div class="navbar-container">
+        <div class="navbar-title">
+          <p>My Portfolio</p>
+        </div>
+        <div class="navbar-button-container-laptop">
+          <div class="navbar-button"><a href="#">Home</a></div>
+          <div class="navbar-button"><a href="#aboutme">About Me</a></div>
+          <div class="navbar-button"><a href="#skills">Skills</a></div>
+          <div class="navbar-button"><a href="#projects">Projects</a></div>
+          <div class="navbar-button"><a href="#services">Services</a></div>
+          <div class="navbar-button"><a href="#contact">Contact Me</a></div>
+        </div>
+        <div class="nav-icon-container" onclick="toggleNav()">
+          <i class="fa-sharp fa-solid fa-bars nav-icon"></i>
+        </div>
+      </div>
+      <div class="navbar-button-container-mobile">
+        <div class="navbar-button"><a href="#">Home</a></div>
+        <div class="navbar-button"><a href="#aboutme">About Me</a></div>
+        <div class="navbar-button"><a href="#skills">Skills</a></div>
+        <div class="navbar-button"><a href="#projects">Projects</a></div>
+        <div class="navbar-button"><a href="#services">Services</a></div>
+        <div class="navbar-button"><a href="#contact">Contact Me</a></div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!--------------------INTRODUCTION-------------------->
+
+      <div class="introduction-container">
+        <div class="myimg-container">
+          <div class="my-img-bg">
+            <img
+              src="/MyImage.png"
+              alt="My Image"
+              class="my-img"
+            />
+          </div>
+        </div>
+        <div class="intro-text-container">
+          <div class="text-container">
+            <h1>
+              <span class="static">I'm </span><span class="dynamic"></span>
+            </h1>
+            <p>
+              Student and front-end developer and programmer with Java and
+              Python skills, passionate about photography, music and literature.
+            </p>
+          </div>
+          <p class="details">
+            <a href="#contact">Contact Me</a>
+            <a
+              href="/MY RESUME.pdf"
+              download="Debanik Dutta Resume.pdf"
+            >
+              My Resume
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!--------------------ABOUT ME-------------------->
+
+      <div class="aboutme-container" id="aboutme">
+        <div class="aboutme-header-container">
+          <h1 class="header1">ABOUT</h1>
+          <h1 class="header2">ME</h1>
+        </div>
+        <div class="aboutme-content-container">
+          <div class="aboutme-text-container">
+            <p>
+              I am a dedicated front-end developer currently pursuing a B.Tech
+              in Computer Science & Engineering at Netaji Subhash Engineering
+              College. Proficient in C, Java, and Python, I merge intelligence
+              with diligence to achieve excellence. My passions include
+              photography, music, and literature, reflecting a commitment to
+              both technical expertise and creative pursuits.
+            </p>
+          </div>
+          <div class="tab-container">
+            <div class="tab-link-container">
+              <div
+                class="tab-link active-link"
+                onclick="opentab(event, 'education')"
+              >
+                <p>Education</p>
+              </div>
+              <div class="tab-link" onclick="opentab(event, 'achievements')">
+                <p>Achievements</p>
+              </div>
+              <div class="tab-link" onclick="opentab(event, 'experiences')">
+                <p>Experiences</p>
+              </div>
+            </div>
+            <div class="tab-content-container">
+              <div class="tag-content active-tag" id="education">
+                <ul>
+                  <li>
+                    BTech in Computer Science and Engineering<br />2022-26
+                    Netaji Subhash Engineering College<br />CGPA: 7.9 (Till Now)
+                  </li>
+                  <li>
+                    Indian School Certificate (Class 12)<br />2022 Ram Mohan
+                    Mission High School<br />Score: 93.25%
+                  </li>
+                  <li>
+                    Indian Certificate of Secondary Education (Class 10)<br />2020
+                    Ram Mohan Mission High School<br />Score: 97.2%
+                  </li>
+                </ul>
+              </div>
+              <div id="achievements" class="tag-content">
+                <ul>
+                  <li>
+                    Finalist Smart India Hackathon 2023<br />Flutter, UI/UX
+                  </li>
+                  <li>
+                    #19 Innovatrix: Grand Hackathon 2023<br />HTML, CSS,
+                    JavaScript
+                  </li>
+                  <li>100+ Problems Solved LeetCode<br />C, Java, Python</li>
+                  <li>
+                    5200 Rank West Bengal Joint Entrance Exams (WBJEE) 2022
+                  </li>
+                  <li style="margin-bottom: 5px">
+                    93.9171228 Percentile Joint Entrance Exams (JEE) 2022
+                  </li>
+                </ul>
+              </div>
+              <div id="experiences" class="tag-content">
+                <ul>
+                  <li>
+                    Web Development Intern<br />Codsoft June 2024 - July 2024<br />HTML,
+                    CSS, JavaScript
+                  </li>
+                  <li>
+                    Web Development Intern<br />Oasis Infobyte June 2024 - July
+                    2024<br />HTML, CSS, JavaScript
+                  </li>
+                  <li>
+                    Team Head<br />Lensified : College Photography Club May 2024
+                    - Present<br />Management, Leadership
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------SKILLS---------------->
+
+      <div class="skills-section-container" id="skills">
+        <div class="skills-header-container">
+          <div class="skills-header">
+            <h1>SKILLS</h1>
+          </div>
+          <div class="skills-text">
+            <p>
+              Welcome to the skills section of my portfolio, showcasing a
+              diverse range of expertise developed of experience and continuous
+              learning. Explore my technical proficiencies, creative talents,
+              and professional competencies that drive exceptional results.
+            </p>
+          </div>
+        </div>
+        <div class="skills-menu">
+          <div class="skills-left">
+            <div class="frontend-container">
+              <div class="category-title">
+                <h2>FRONTEND DEVELOPMENT</h2>
+              </div>
+              <div class="frontend-category">
+                <div class="category-name">HTML</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress pro"
+                    style="--progress-width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <div class="frontend-category">
+                <div class="category-name">CSS</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 66%"
+                  ></div>
+                </div>
+              </div>
+              <div class="frontend-category">
+                <div class="category-name">JavaScript</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress beginner"
+                    style="--progress-width: 33%"
+                  ></div>
+                </div>
+              </div>
+              <div class="frontend-category">
+                <div class="category-name">Bootstrap</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress pro"
+                    style="--progress-width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <div class="frontend-category">
+                <div class="category-name">React JS</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress beginner"
+                    style="--progress-width: 10%"
+                  ></div>
+                </div>
+              </div>
+              <div class="frontend-category">
+                <div class="category-name">Flutter</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress beginner"
+                    style="--progress-width: 5%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="design-container">
+              <div class="category-title">
+                <h2>DESIGN TOOLS</h2>
+              </div>
+              <div class="design-category">
+                <div class="category-name">Canva</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress pro"
+                    style="--progress-width: 95%"
+                  ></div>
+                </div>
+              </div>
+              <div class="design-category">
+                <div class="category-name">Figma</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress beginner"
+                    style="--progress-width: 20%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-right">
+            <div class="pl-container">
+              <div class="category-title">
+                <h2>PROGRAMMING LANGUAGES</h2>
+              </div>
+              <div class="pl-category">
+                <div class="category-name">C</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 60%"
+                  ></div>
+                </div>
+              </div>
+              <div class="pl-category">
+                <div class="category-name">Java</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress beginner"
+                    style="--progress-width: 33%"
+                  ></div>
+                </div>
+              </div>
+              <div class="pl-category">
+                <div class="category-name">Python</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress beginner"
+                    style="--progress-width: 30%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="development-container">
+              <div class="category-title">
+                <h2>DEVELOPMENT TOOLS</h2>
+              </div>
+              <div class="development-category">
+                <div class="category-name">Git & Github</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 45%"
+                  ></div>
+                </div>
+              </div>
+              <div class="development-category">
+                <div class="category-name">VS Code</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 66%"
+                  ></div>
+                </div>
+              </div>
+              <div class="development-category">
+                <div class="category-name">Netlify</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 60%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="ss-container">
+              <div class="category-title">
+                <h2>SOFT SKILLS</h2>
+              </div>
+              <div class="ss-category">
+                <div class="category-name">Leadership</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 66%"
+                  ></div>
+                </div>
+              </div>
+              <div class="ss-category">
+                <div class="category-name">Management</div>
+                <div class="category-progress-bar">
+                  <div
+                    class="category-progress intermediate"
+                    style="--progress-width: 66%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------PROJECTS-------------------->
+
+      <div class="projects-section-container" id="projects">
+        <div class="projects-header">
+          <h1>PROJECTS</h1>
+        </div>
+        <div class="project-intro-text">
+          <p>
+            Explore a curated selection of my projects, each highlighting my
+            skills, creativity, and problem-solving abilities. These works
+            demonstrate my journey from concept to impactful real-world
+            solutions, reflecting my dedication and expertise.
+          </p>
+        </div>
+        <div class="projects-card-container">
+          <div class="project-card">
+            <div class="project-name">
+              <h2>Bookstore Website</h2>
+            </div>
+            <div class="project-thumbnail">
+              <img
+                src="/Front-end 1.png"
+                alt=""
+                class="project-thumbnail-img"
+              />
+            </div>
+            <div class="project-details">
+              <p>Responsive, e-commerce website built using HTML, CSS and JS</p>
+            </div>
+            <div class="project-btn">
+              <span class="git-btn"
+                ><a
+                  href="https://github.com/debs070903/mybookstore"
+                  target="_blank"
+                  ><i class="fa-brands fa-github active-btn"></i></a
+              ></span>
+              <span class="demo-btn"
+                ><a
+                  href="https://mybookstoreofficial.netlify.app/"
+                  target="_blank"
+                  ><i class="fas fa-desktop active-btn"></i></a
+              ></span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-name">
+              <h2>Jewellery Store Website</h2>
+            </div>
+            <div class="project-thumbnail">
+              <img
+                src="/Front-end 2.png"
+                alt=""
+                class="project-thumbnail-img"
+              />
+            </div>
+            <div class="project-details">
+              <p>
+                Responsive, e-commerce website built using HTML, CSS, Bootstrap
+                and JS
+              </p>
+            </div>
+            <div class="project-btn">
+              <span class="git-btn"
+                ><a
+                  href="https://github.com/debs070903/Jewellery-Store"
+                  target="_blank"
+                  ><i class="fa-brands fa-github active-btn"></i></a
+              ></span>
+              <span class="demo-btn"
+                ><a href="https://punjab-jewellery.netlify.app/" target="_blank"
+                  ><i class="fas fa-desktop active-btn"></i></a
+              ></span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-name">
+              <h2>Desktop Reminder</h2>
+            </div>
+            <div class="project-thumbnail">
+              <img
+                src="/Python.png"
+                alt=""
+                class="project-thumbnail-img"
+              />
+            </div>
+            <div class="project-details">
+              <p>
+                A basic desktop reminder made using Python, using plyer module
+              </p>
+            </div>
+            <div class="project-btn">
+              <span class="git-btn"
+                ><a
+                  href="https://github.com/debs070903/Desktop-Reminder"
+                  target="_blank"
+                  ><i class="fa-brands fa-github active-btn"></i></a
+              ></span>
+              <span class="demo-btn"
+                ><a href=""><i class="fas fa-desktop disabled-btn"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------SERVICES-------------------->
+
+      <div class="services-container" id="services">
+        <div class="services-header-container">
+          <div class="services-header-head">
+            <h1>SERVICES</h1>
+          </div>
+          <div class="services-text">
+            Explore the professional services I offer to bring your vision to
+            life. With expertise in web development, programming, and design, I
+            provide tailored solutions to enhance your online presence. Whether
+            you're creating a new website, developing custom software, or
+            designing user-friendly interfaces, my services are designed to meet
+            your needs.
+          </div>
+        </div>
+        <div class="services-content-container">
+          <div class="services-card">
+            <div class="services-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="services-name">WEB DEVELOPMENT</div>
+            <div class="services-details">
+              With extensive experience in web development, I specialize in
+              creating responsive and interactive websites that provide a
+              seamless user experience. My focus lies in building dynamic user
+              interfaces and single-page applications that are both visually
+              appealing and highly functional.
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="services-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="services-name">PROGRAMMING</div>
+            <div class="services-details">
+              My programming services encompass the entire development process,
+              from initial concept to final deployment. I am committed to
+              writing clean, efficient, and well-documented code, ensuring that
+              your software projects are reliable, scalable, and easy to
+              maintain.
+            </div>
+          </div>
+          <div class="services-card">
+            <div class="services-icon"><i class="fa-solid fa-palette"></i></div>
+            <div class="services-name">GRAPHIC DESIGNING</div>
+            <div class="services-details">
+              In design, I excel at crafting visually appealing graphics and
+              layouts that capture the essence of your brand. My design services
+              include creating user-friendly interfaces and experiences,
+              ensuring that your digital products are not only functional but
+              also engaging and intuitive.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------CONTACT-------------------->
+
+      <div class="contact-section-container" id="contact">
+        <div class="contact-header">
+          <h1>CONTACT ME</h1>
+        </div>
+        <div class="contact-icon-container">
+          <div class="contact-icon">
+            <a href="mailto:debanikdutta07@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a href="https://wa.me/9836308844" target="_blank"
+              ><i class="fa-brands fa-square-whatsapp"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a
+              href="https://www.linkedin.com/in/debanik-dutta-3347b8253"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a
+              href="https://www.facebook.com/profile.php?id=100061228604949&mibextid=ZbWKwL"
+              target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a href="https://www.instagram.com/__urusai__/" target="_blank"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
+          <div class="contact-icon">
+            <a href="https://github.com/debs070903" target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Designed & created by Debanik Dutta &copydebanik_dutta_2024
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
